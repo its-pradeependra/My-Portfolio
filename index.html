@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Code Craft</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Expereince</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav" class="hamburger-nav">
+            <div class="logo hamburger-logo">Code Craft</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon logo" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience"
+                            onclick="toggleMenu()">Expereince</a></li>
+                    <li><a href="#projects"
+                            onclick="toggleMenu()">Project</a></li>
+                    <li><a href="#contact"
+                            onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile" class="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.png" alt="Profile Pic">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello I'm</p>
+                <h1 class="title">Pradeependra Pratap</h1>
+                <p class="section__text_p2" id="element">Frontend Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2"
+                        onclick="window.open('./assets/resume-example.pdf')">Download
+                        CV</button>
+                    <button class="btn btn-color-1"
+                        onclick="location.href='./#contact'">Contact
+                        Info</button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="linkedin logo" class="icon" onClick="window.open('https://linkedin.com/in/pradeependra-pratap');">
+                    <img src="./assets/github.png" alt="github logo" class="icon" onClick="window.open('https://github.com/its-pradeependra');">
+                </div>
+            </section>
+            <section id="about" class="about">
+                <p class="section__text__p1">Get To Know More</p>
+                <h1 class="title">About Me</h1>
+                <div class="section-container">
+                    <div class="section__pic-container">
+                        <img src="./assets/about-pic.png" alt="about pic"
+                            class="about-pic">
+                    </div>
+                    <div class="about-details-container">
+                        <div class="about-containers">
+                            <div class="details-container">
+                                <img src="./assets/experience.png"
+                                    alt="expereince icon" class="icon">
+                                <h3>Experience</h3>
+                                <p>2+ Years<br>Frontend Development</p>
+                            </div>
+                            <div class="details-container">
+                                <img src="./assets/education.png"
+                                    alt="education icon" class="icon">
+                                <h3>Education</h3>
+                                <p>Bachelor in Technology<br>Computer Science
+                                    Engineering</p>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>
+                                Innovative Tech Enthusiast Web Developer with expertise in building User-Friendly Websites and Ul Designs.Successfully Enhanced site loading times by 30%, Boosting User Engagement by Code Optimization Technique.Renowned for Resolving Tough Technical Issues Swiftly and Efficiently. Thrive in Team Environments, consistently Producing High-Quality Projects on Time. Continuously Acquiring New Skills to Stay Ahead in Web Development Trends. Currently seeking for a Web Development role to further apply and expand my expertise.
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./assets/arrow.png" alt="arrow icon"
+                        class="arrow icon "
+                        onclick="location.href='./#experience'">
+                </section>
+                <section id="experience" class="experience">
+                    <p class="section__text__p1">Explore My</p>
+                    <h1 class="title">Experience</h1>
+                    <div class="experience-details-container">
+                        <div class="about-containers">
+                            <div class="details-container">
+                                <h2 class="experience-sub-title">Frontend
+                                    Development</h2>
+                                <div class="article-container">
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>HTML5</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>CSS3</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>SASS</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>JavaScript</h3>
+                                            <p>Intermediate</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>Figma</h3>
+                                            <p>Intermediate</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>Bootstrap</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>Wordpress</h3>
+                                            <p>Intermediate</p>
+                                        </div>
+                                    </article>
+                                    
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>MediaQuery</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="details-container">
+                                <h2 class="experience-sub-title">Backend
+                                    Development</h2>
+                                <div class="article-container">
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>Node.js</h3>
+                                            <p>Intermediate</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>React.js</h3>
+                                            <p>Intermediate</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>MongoDB</h3>
+                                            <p>Basic</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>Git</h3>
+                                            <p>Intermediate</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <img src="./assets/checkmark.png"
+                                            alt="checkmark icon" class="icon">
+                                        <div>
+                                            <h3>jQuery</h3>
+                                            <p>Intermediate</p>
+                                        </div>
+                                    </article>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./assets/arrow.png" alt="arrow icon"
+                        class="arrow icon "
+                        onclick="location.href='./#projects'">
+                </section>
+                <section id="projects" class="projects">
+                    <p class="section__text__p1">Browse My Recent</p>
+                    <h1 class="title">Projects</h1>
+                    <div class="experience-details-container">
+                        <div class="about-containers">
+                            <div class="details-container color-container">
+                                <div class="article-container">
+                                    <img src="./assets/project-1.png"
+                                        alt="project-1" class="project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">Project
+                                    One</h2>
+                                <div class="btn-container">
+                                    <button class="btn btn-color-2 project-btn"
+                                        onClick="window.open('http://www.example.com');">
+                                        Github
+                                    </button>
+                                    <button class="btn btn-color-2 project-btn"
+                                        onClick="window.open('http://www.example.com');">
+                                        Live Demo
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="details-container color-container">
+                                <div class="article-container">
+                                    <img src="./assets/project-2.png"
+                                        alt="project-2" class="project-img">
+                                </div>
+                                <h2
+                                    class="experience-sub-title project-title">Project
+                                    Two</h2>
+                                <div class="btn-container">
+                                    <button class="btn btn-color-2 project-btn"
+                                        onClick="window.open('http://www.example.com');">
+                                        Github
+                                    </button>
+                                    <button class="btn btn-color-2 project-btn"
+                                        onClick="window.open('http://www.example.com');">
+                                        Live Demo
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="details-container color-container">
+                                <div class="article-container">
+                                    <img src="./assets/project-3.png"
+                                        alt="project-3" class="project-img">
+                                </div>
+                                <h2
+                                    class="experience-sub-title project-title">Project
+                                    Three</h2>
+                                <div class="btn-container">
+                                    <button class="btn btn-color-2 project-btn"
+                                        onClick="window.open('http://www.example.com');">
+                                        Github
+                                    </button>
+                                    <button class="btn btn-color-2 project-btn"
+                                        onClick="window.open('http://www.example.com');">
+                                        Live Demo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./assets/arrow.png" alt="arrow icon"
+                        class="arrow icon "
+                        onclick="location.href='./#contact'">
+                </section>
+                <section id="contact" class="contact">
+                    <p class="section__text__p1">Get In Touch</p>
+                    <h1 class="title">Contact Me</h1>
+                    <div class="contact-info-upper-container">
+                        <div class="contact-info-container">
+                            <img src="./assets/email.png" alt="email icon"
+                                class="icon contact-icon email-icon">
+                            <p><a
+                                    href="mailto:pradeependrapratap@gmail.com">Example@gmail.com</a></p>
+                        </div>
+                        <div class="contact-info-container">
+                            <img src="./assets/linkedin.png" alt="linkedin icon"
+                                class="icon contact-icon">
+                            <p><a href="https://linkedin.com/in/pradeependra-pratap" target="_blank">Linkedin</a></p>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer">
+                    <nav>
+                        <div class="nav-links-container">
+                            <ul class="nav-links">
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#experience">Expereince</a></li>
+                                <li><a href="#projects">Project</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p>Copyright &#169; 2024 <span>Code Craft</span>. All Rights
+                        Reserved.</p>
+                </footer>
+                <script src="script.js"></script>
+            </body>
+
+        </html>
